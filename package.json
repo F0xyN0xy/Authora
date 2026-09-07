@@ -1,0 +1,68 @@
+{
+  "name": "authora",
+  "version": "1.0.0",
+  "description": "Privacy-preserving verifiable credentials on Ethereum using zero-knowledge proofs and Merkle trees",
+  "main": "src/index.js",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.js",
+    "./issuer": "./src/lib/issuer.js",
+    "./verifier": "./src/lib/verifier.js",
+    "./holder": "./src/lib/holder.js",
+    "./revocation": "./src/lib/revocation.js",
+    "./merkle": "./src/lib/merkle.js"
+  },
+  "files": [
+    "src/",
+    "build/",
+    "contracts/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "node": "hardhat node",
+    "compile": "node scripts/compile.js",
+    "deploy": "node scripts/deploy.js",
+    "issue": "node scripts/issueCredential.js",
+    "present": "node scripts/presentProof.js",
+    "verify": "node scripts/verifyProof.js",
+    "revoke": "node scripts/revokeCredential.js",
+    "test": "mocha test/registry.test.js --timeout 20000",
+    "example": "node examples/complete-example.js",
+    "quick-start": "node examples/quick-start.js"
+  },
+  "keywords": [
+    "credentials",
+    "verifiable-credentials",
+    "blockchain",
+    "ethereum",
+    "zero-knowledge",
+    "privacy",
+    "identity",
+    "merkle-tree",
+    "web3",
+    "decentralized"
+  ],
+  "author": "F0xyN0xy",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/F0xyN0xy/Authora.git"
+  },
+  "bugs": {
+    "url": "https://github.com/F0xyN0xy/Authora/issues"
+  },
+  "homepage": "https://github.com/F0xyN0xy/Authora#readme",
+  "dependencies": {
+    "ethers": "^6.17.0",
+    "keccak256": "^1.0.6",
+    "merkletreejs": "^0.6.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox-mocha-ethers": "^3.0.7",
+    "chai": "^5.3.3",
+    "hardhat": "^3.15.0",
+    "mocha": "^11.8.0",
+    "solc": "^0.8.24"
+  }
+}
