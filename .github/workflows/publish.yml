@@ -6,6 +6,7 @@ on:
 
 permissions:
   contents: read
+  packages: write  # Required to publish to GitHub Packages
   id-token: write  # Required for OIDC trusted publisher
 
 jobs:
