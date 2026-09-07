@@ -25,9 +25,9 @@ jobs:
           scope: '@f0xyn0xy'
 
       - name: Install dependencies
-        run: npm ci
+        run: npm ci --include=dev
 
-      - name: Build (if needed)
+      - name: Compile contracts
         run: npm run compile
 
       - name: Publish to GitHub Packages
