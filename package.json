@@ -1,9 +1,12 @@
 {
-  "name": "authora",
-  "version": "1.0.0",
+  "name": "@f0xyn0xy/authora",
+  "version": "1.0.3",
   "description": "Privacy-preserving verifiable credentials on Ethereum using zero-knowledge proofs and Merkle trees",
   "main": "src/index.js",
   "type": "module",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "exports": {
     ".": "./src/index.js",
     "./issuer": "./src/lib/issuer.js",
@@ -47,7 +50,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/F0xyN0xy/Authora.git"
+    "url": "git+https://github.com/F0xyN0xy/Authora.git"
   },
   "bugs": {
     "url": "https://github.com/F0xyN0xy/Authora/issues"

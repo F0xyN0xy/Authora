@@ -1,0 +1,2 @@
+@f0xyn0xy:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
