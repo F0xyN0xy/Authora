@@ -1,6 +1,6 @@
 {
   "name": "@f0xyn0xy/authora",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Privacy-preserving verifiable credentials on Ethereum using zero-knowledge proofs and Merkle trees",
   "main": "src/index.js",
   "type": "module",
